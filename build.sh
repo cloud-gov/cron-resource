@@ -4,8 +4,8 @@ set -ex
 
 go mod download
 
-go get github.com/onsi/ginkgo/ginkgo
-go get github.com/onsi/gomega
+go install github.com/onsi/ginkgo/v2/ginkgo
+go install github.com/onsi/gomega
 ginkgo -r .
 
 mkdir -p tmp/build

@@ -1,6 +1,6 @@
 ARG base_image
 
-FROM golang:1.13 as resource
+FROM golang:1.21 as resource
 COPY . /resource
 WORKDIR /resource
 RUN ./build.sh
