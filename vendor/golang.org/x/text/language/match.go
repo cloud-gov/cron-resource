@@ -143,7 +143,7 @@ var ErrMissingLikelyTagsData = errors.New("missing likely tags data")
 // CLDR defines an algorithm for finding the best match between two sets of language
 // tags. The basic algorithm defines how to score a possible match and then find
 // the match with the best score
-// (see http://www.unicode.org/reports/tr35/#LanguageMatching).
+// (see https://www.unicode.org/reports/tr35/#LanguageMatching).
 // Using scoring has several disadvantages. The scoring obfuscates the importance of
 // the various factors considered, making the algorithm harder to understand. Using
 // scoring also requires the full score to be computed for each pair of tags.
@@ -545,7 +545,7 @@ type bestMatch struct {
 // match as the preferred match.
 //
 // If pin is true and have and tag are a strong match, it will henceforth only
-// consider matches for this language. This corresponds to the nothing that most
+// consider matches for this language. This corresponds to the idea that most
 // users have a strong preference for the first defined language. A user can
 // still prefer a second language over a dialect of the preferred language by
 // explicitly specifying dialects, e.g. "en, nl, en-GB". In this case pin should

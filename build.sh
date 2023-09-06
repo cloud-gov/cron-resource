@@ -4,7 +4,7 @@ set -ex
 
 go mod download
 
-go get github.com/onsi/ginkgo/ginkgo
+go install github.com/onsi/ginkgo/v2/ginkgo
 go get github.com/onsi/gomega
 ginkgo -r .
 
