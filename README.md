@@ -4,7 +4,7 @@ Implements a resource that reports new versions when the current time
 matches the crontab expression
 
 ---
-## Update your pipeline
+## Update your pipeline 
 
 Update your pipeline to include this new declaration of resource types. See the example pipeline yml snippet below or the Concourse docs for more details [here](https://concourse.ci/configuring-resource-types.html).
 ```
